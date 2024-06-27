@@ -2,7 +2,7 @@
 
 ## 1. Giới thiệu
 
-- Tên ứng dụng: **APP CHAT ZALO**
+- Tên ứng dụng: **APP CHAT**
 
 ## 2. Các chức năng chính
 
