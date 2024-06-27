@@ -1,4 +1,5 @@
 const Stack = createNativeStackNavigator();
+import { Linking, Platform } from 'react-native';
 import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -27,6 +28,15 @@ import TimKiem from "./screens/TimKiem";
 import ThemBan from "./screens/ThemBan";
 import TaoNhom from "./screens/TaoNhom";
 const App = () => {
+  const handleOpenExample = () => {
+    Linking.openURL('https://chatappreactnative.vercel.app');
+  };
+  
+  return (
+    <TouchableOpacity onPress={handleOpenExample}>
+      <Text>Open Example</Text>
+    </TouchableOpacity>
+  );
   const [hideSplashScreen, setHideSplashScreen] = React.useState(true);
   const [fontsLoaded, error] = useFonts({
     "PTSans-Bold": require("./assets/fonts/PTSans-Bold.ttf"),
